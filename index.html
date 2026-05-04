@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misi Kucing Lapar - Logic Builders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🐱 Misi Kucing Lapar 🐟</h1>
+        <p>Bantu Mpuss cari angka kesukaannya!</p>
+        
+        <div class="input-group">
+            <label>Isi Kotak Makanan (angka pisah koma):</label>
+            <input type="text" id="deretAngka" value="7, 12, 5, 20, 3">
+            
+            <label>Angka Ikan yang Dicari:</label>
+            <input type="number" id="targetAngka" value="20">
+        </div>
+        
+        <div class="controls">
+            <button id="btnMulai" onclick="mulaiMisi()">Mulai Cari! 🐾</button>
+            <button id="btnLanjut" class="hidden">Cek Kotak Berikutnya! ✨</button>
+        </div>
+
+        <div id="panggung" class="panggung"></div>
+        
+        <div class="pesan-box">
+            <p id="status">Meow! Klik tombol untuk mulai membantu Mpuss!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

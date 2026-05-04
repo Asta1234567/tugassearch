@@ -1,0 +1,55 @@
+body { 
+    background: #ffefd5; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; margin: 0;
+}
+
+.game-container { 
+    background: white; padding: 30px; border-radius: 30px; 
+    box-shadow: 0 10px 0 #ffcc80; width: 90%; max-width: 500px; text-align: center;
+    border: 5px solid #ffb74d;
+}
+
+h1 { color: #e67e22; text-shadow: 2px 2px #ffedcc; }
+
+.input-group { text-align: left; margin-bottom: 20px; }
+input {
+    width: 90%; padding: 10px; margin: 5px 0 15px;
+    border: 3px solid #ffcc80; border-radius: 15px; font-size: 1rem;
+}
+
+.panggung { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin: 20px 0; }
+
+.kotak {
+    width: 60px; height: 60px; line-height: 60px; border-radius: 50%;
+    background: #ffe0b2; font-weight: bold; font-size: 1.2rem; color: #d35400;
+    transition: 0.3s; border: 3px solid #ffcc80;
+}
+
+/* Kotak yang lagi diendus Mpuss */
+.endus { background: #ffd32a; transform: scale(1.2) rotate(10deg); border-color: #ffa801; }
+
+/* Ketemu Ikan! */
+.ketemu { background: #2ecc71; color: white; border-color: #27ae60; animation: loncat 0.5s infinite; }
+
+/* Bukan Ikan */
+.bukan { background: #bdc3c7; opacity: 0.6; transform: scale(0.9); }
+
+@keyframes loncat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+button { 
+    background: #ff9f43; color: white; border: none; padding: 12px 25px;
+    border-radius: 50px; cursor: pointer; font-weight: bold; font-size: 1.1rem;
+    box-shadow: 0 5px 0 #e67e22; margin: 5px;
+}
+
+button:active { transform: translateY(3px); box-shadow: 0 2px 0 #e67e22; }
+
+.hidden { display: none; }
+#btnLanjut { background: #54a0ff; box-shadow: 0 5px 0 #2e86de; }
+
+.pesan-box { background: #fff4e6; padding: 15px; border-radius: 15px; margin-top: 20px; border: 2px dashed #ff9f43; }
